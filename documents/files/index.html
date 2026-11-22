@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eid Al Etihad Photobooth</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Reem+Kufi:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="stage">
+  <div id="wipe"></div>
+  <section class="screen on" id="start">
+    <div class="shape circle"></div>
+    <div class="shape tri"></div>
+    <div class="logo">
+      <div class="date">DEC. 02</div>
+      <div class="ar">عيد الاتحاد</div>
+      <div class="en">EID AL ETIHAD</div>
+    </div>
+    <p class="tag">Strike a pose · اِلتقط صورتك</p>
+    <button class="btn solid" id="go"><span>Start · ابدأ</span><i class="arr">→</i></button>
+    <p id="err"></p>
+    <button class="btn" id="pick" hidden><span>Take photo instead</span></button>
+    <input type="file" id="file" accept="image/*" capture="user" hidden>
+  </section>
+
+  <section class="screen" id="cam">
+    <video id="v" playsinline muted autoplay></video>
+    <p id="hint"></p>
+    <div id="count"></div>
+    <div id="bar"></div>
+    <div id="flash"></div>
+  </section>
+
+  <section class="screen" id="res">
+    <img id="photo" alt="Your photo">
+    <div id="row">
+      <div id="qrbox">Preparing…</div>
+      <div class="qrtext">
+        <div class="en">SCAN TO DOWNLOAD</div>
+        <div class="ar">امسح للتحميل</div>
+      </div>
+    </div>
+    <p id="msg"></p>
+    <div class="actions">
+      <button class="btn" id="retake"><span>Retake</span></button>
+      <a class="btn" id="save" download="eid-al-etihad.jpg"><span>Save</span></a>
+      <button class="btn solid" id="done"><span>Done</span><i class="arr">→</i></button>
+    </div>
+  </section>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

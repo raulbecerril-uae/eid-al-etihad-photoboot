@@ -1,0 +1,9 @@
+photos/
+server.log
+*.log
+node_modules/
+
+# Large files that exceed GitHub's 100 MB limit
+documents/Eid Al Etihad_Artworks_Vertical_RGB (1).pdf
+documents/assets - Copy/illustrations.zip
+documents/assets.rar

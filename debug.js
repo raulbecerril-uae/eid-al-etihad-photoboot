@@ -1,0 +1,1 @@
+window.__v=[];document.addEventListener("securitypolicyviolation",function(e){__v.push("CSP blocked: "+e.blockedURI+" ("+e.violatedDirective+")")});addEventListener("error",function(e){var t=e.target;if(t&&t!==window&&(t.src||t.href))__v.push("FAILED to load: "+(t.src||t.href))},true)
